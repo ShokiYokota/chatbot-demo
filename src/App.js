@@ -1,7 +1,8 @@
 import './App.css';
-import Article from './components/Article';
+import {Article,LangageList} from './components/index';
 import {useState} from 'react'
 
+const lang = '';
 
 function App() {
   const [state,setState]  = useState(false)
@@ -10,10 +11,14 @@ function App() {
   }
   return (
     <div>
-      今は{state ? "ON":"OFF"}です
+      知っている言語の一覧：<LangageList lang={lang}/>
+      <h1>prevState:今は{state ? "ON":"OFF"}です</h1>
       <Article
-        title={"タイトル表示"}
-        content={"内容表示です"}
+        title={"Reactのお勉強"}
+        subtitle={"勉強内容"}
+        content1={"prevState"}
+        content2={"配列と繰り返し"}
+        content3={"リストの追加"}
       />
       <button onClick={changeState}>ボタン</button>
     </div>
