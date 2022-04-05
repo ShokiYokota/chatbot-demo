@@ -1,11 +1,10 @@
-const Langage = ["Java","PHP","React","Go"];
 
 
 
 
-const LangageList = (props)=>{
+const LangageList = ({langs})=>{
     return(
-        Langage.map((lang,index)=>{
+        langs.map((lang,index)=>{
         return <div key={index.toString()}>{lang}</div>
          })
     )

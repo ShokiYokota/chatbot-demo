@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-const Form =()=>{
+const Form =({onAddLang})=>{
     const[text,setText] = useState("");
 
     const submitForm = (event)=>{
         event.preventDefault();
-        console.log(text);
+        onAddLang(text);
     }
     return(
         <div>
