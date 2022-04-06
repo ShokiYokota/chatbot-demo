@@ -28,6 +28,7 @@ function App() {
         content1={"prevState"}
         content2={"配列と繰り返し"}
         content3={"リストの追加"}
+        <p>あなたのいいところは優しさです<p>
       />
       
     </div>
